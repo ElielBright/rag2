@@ -183,7 +183,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:5000");
+   const ws = new WebSocket("wss://chat-backend-2-xjk1.onrender.com");
 
     ws.onopen = () => console.log("Connected to WebSocket");
     ws.onerror = (error) => console.error("WebSocket Error:", error);
